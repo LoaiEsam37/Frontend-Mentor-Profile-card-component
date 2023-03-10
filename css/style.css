@@ -1,0 +1,112 @@
+body {
+    background-color: #19a1af;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    height: fit-content;
+    position: relative;
+    text-align: center;
+}
+
+.card__header img:nth-child(1) {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.card__header img:nth-child(2) {
+    position: absolute;
+    width: 90px;
+    border-radius: 50%;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    border: 5px solid #ffffff;
+}
+
+.card__content h1 {
+    font-size: 18px;
+    position: relative;
+    display: block;
+}
+
+.card__content span.age {
+    position: absolute;
+    left: 220px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(0, 0%, 59%);
+}
+
+.card__content span.city {
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card__content--info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__content--info h2 {
+    font-size: 18px;
+}
+
+.card__content--info span {
+    font-size: 13px;
+    color: hsl(0, 0%, 59%);
+}
+
+.bg-pattern-top {
+    background-image: url(../images/bg-pattern-top.svg);
+    background-size: cover;
+    transform: rotateX(180deg);
+    width: 100%;
+    height: 100%;
+    top: -35%;
+    left: -35%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.bg-pattern-bottom {
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    bottom: -45%;
+    right: -35%;
+    position: absolute;
+    z-index: -1;
+}
